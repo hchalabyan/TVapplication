@@ -17,7 +17,7 @@ export const Button: React.FC<IButtonProps> = ({
         <button
             className={clsx(
                 classes.Base,
-                classes[buttonType],
+                buttonType ? classes[buttonType] : null,
                 isActive && classes.Active,
                 className
             )}

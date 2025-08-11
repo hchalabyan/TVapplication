@@ -1,11 +1,10 @@
 import React from "react";
 import clsx from "clsx";
-import {IHomeProps} from "@/components/Home/types";
 import classes from "./Home.module.scss";
 import {Featured, SideBar, SwiperSlider} from "@/components";
 import {TypographyBase} from "@/components/Typography";
 
-export const Home: React.FC<IHomeProps> = () => {
+export const Home = () => {
     return (
 
         <div className={clsx(classes.Container)}>

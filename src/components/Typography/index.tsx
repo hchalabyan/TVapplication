@@ -4,6 +4,8 @@ import clsx from 'clsx'
 
 import {TypographyProps} from './types'
 
+const safeClass = (key: string | undefined) => (key && classes[key]) || null
+
 export const TypographyBase = ({
                                    size = 'base',
                                    bold = 'regular',
@@ -16,10 +18,10 @@ export const TypographyBase = ({
     return (
         <p
             className={clsx(
-                classes[size],
-                classes[bold],
-                classes[color],
-                classes[transform],
+                safeClass(size),
+                safeClass(bold),
+                safeClass(color),
+                safeClass(transform),
                 className
             )}
             {...props}
