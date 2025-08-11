@@ -1,0 +1,78 @@
+@import '../../styles/variables'; // Adjust path to your variables file
+
+/* Sizes */
+.base {
+  font-size: $font-size-base;
+}
+
+.md {
+  font-size: $font-size-medium;
+}
+
+.base-lg {
+  font-size: $font-size-large;
+}
+
+.lg {
+  font-size: $font-size-base-lg;
+}
+
+.xl {
+  font-size: $font-size-big;
+}
+
+/* Font weights */
+.regular {
+  font-weight: $font-weight-regular;
+}
+
+.medium {
+  font-weight: $font-weight-medium;
+}
+
+.bold {
+  font-weight: $font-weight-bold;
+}
+
+/* Colors */
+.primary {
+  color: $color-primary;
+}
+
+.secondary {
+  color: $color-secondary;
+}
+
+.white {
+  color: $color-white;
+}
+
+.hover {
+  color: $color-active; /* You don’t have a hover color, so I used active */
+}
+
+.text {
+  color: $color-grey;
+}
+
+.black {
+  color: $color-black;
+}
+
+.active {
+  color: $color-active;
+}
+
+.grey {
+  color: $color-grey;
+}
+
+.light-grey {
+  color: $light-grey;
+}
+
+/*Text Transform*/
+
+.uppercase {
+  text-transform: uppercase;
+}

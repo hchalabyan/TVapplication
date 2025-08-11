@@ -1,0 +1,41 @@
+@import '../../styles/variables';
+
+.Base {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: $border-radius-large;
+  padding: 0.7rem 3rem;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+}
+
+.TextBase {
+  font-weight: $font-weight-bold;
+  font-size: 2rem;
+  text-align: center;
+  font-family: $font-family-tajawal;
+}
+
+.Light {
+  @extend .Base;
+  background-color: $color-white;
+  color: black;
+}
+
+.Dark {
+  @extend .Base;
+  background: transparent linear-gradient(128deg, $color-primary 0%, $color-secondary 100%) 0% 0% no-repeat padding-box;
+  color: white;
+}
+
+.Arrow {
+  width: 0;
+  height: 0;
+  border-top: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
+  border-left: 1rem solid $color-black;
+  margin-right: 0.8rem;
+}

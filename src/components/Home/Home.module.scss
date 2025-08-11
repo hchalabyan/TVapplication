@@ -1,0 +1,13 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+  .RelativeSection {
+    width: calc(100% - 10rem);
+    margin-top: auto;
+    margin-left: auto;
+    position: relative;
+  }
+}
