@@ -6,6 +6,7 @@ export const typographySize: Record<typographySizes, string> = {
     md: 'text-medium',
     lg: 'text-baseLg',
     xl: 'text-big',
+    "base-lg": "text-baseLg",
 }
 
 export const typographyType: Record<typographyTypes, string> = {
@@ -22,6 +23,8 @@ export const typographyColor: Record<typographyColors, string> = {
     text: 'text-grey',
     black: 'text-black',
     active: 'text-active',
+    "light-grey": "text-lightGrey",
+    grey: 'text-grey',
 }
 
 export const getTypographyClassName = (
